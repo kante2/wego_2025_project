@@ -1,0 +1,24 @@
+footprint: [[-0.1, -0.1], [-0.1, 0.1], [0.3, 0.1], [0.3, -0.1]]
+footprint_padding: 0.02
+
+transform_tolerance: 0.2
+
+# 로봇의 외형을 xy좌표로 정의 (CCW로 나열)
+
+
+# 로봇 반지름을 footprint 대신 사용할 수도 있음
+#robot_radius: 0.5
+
+
+
+map_type: costmap
+
+inflation_layer:
+  enabled: true
+  cost_scaling_factor: 10.0
+  inflation_radius: 0.4
+  inflation_unknown: true
+
+static_layer:
+  enabled: true
+  map_topic: "/map"
